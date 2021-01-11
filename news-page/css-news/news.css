@@ -1,0 +1,243 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-semibold.svg#gilroy-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-weight: 600;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-weight: 500;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-extrabold.svg#gilroy-extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-weight: 800;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-black.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-black.svg#gilroy-black') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-weight: 900;
+		font-style: normal;
+}
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	color: black;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 13px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Gilroy', sans-serif;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.container {
+	max-width: 1153px;
+	margin: 0 auto;
+}
+
+/*Секция Новости */
+.transitions {
+	margin: 140px 0px 0px 0px;
+	padding: 0px 10px;
+}
+.transitions__text {
+	font-family: Gilroy;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	text-decoration-line: underline;
+	color: #87B0EE;
+}
+.transitions__text_gray{
+	color: #7D7D7D;
+}
+
+.news-header {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 44px;
+	color: #333333;
+	margin: 20px 0px 30px 0px;
+	padding: 0px 10px;
+}
+.news-conteiner {
+
+}
+.news-wrapper {
+	display: flex;
+	width: 100%;
+}
+.news-wrapper__box{
+	display: flex;
+}
+.news-item {
+	/*flex: 0 1 25%;*/
+	padding: 25px 23px 25px 23px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+	margin: 15px;
+}
+.news-item:hover{
+	box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.07);
+	background-color: #F2EEEE;
+}
+.news-item__image {
+	width: 100%;
+}
+.news-item__time {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ABABAB;
+	padding: 16px 0px 8px 0px;
+}
+.news-item__header {
+	font-weight: 800;
+	font-size: 19px;
+	font-size: calc(14px + 3 * ( 100vw / 1920));
+	line-height: calc(20px + 3 * ( 100vw / 1920));
+	color: #333333;
+	padding: 8px 0px;
+}
+.news-header__text {
+	font-weight: normal;
+	font-size: calc(14px + 2 * ( 100vw / 1920));
+	line-height: 19px;
+	color: #333333;
+}
+
+/*Слик Слайдер - параметры относятся ко всем Слик сайдерам на странице*/
+
+/*Слайдер*/
+.slick-slader{}
+/*Ограничивающая оболочка*/
+.slick-list{
+	overflow: hidden;
+}
+/*Лента слайдов*/
+.slick-track{
+	display: flex;
+}
+/*Слайд*/
+.slick-slide{}
+/*Слайд активный*/
+.slick-slade.slick-active{}
+/*Слайд основной*/
+.slick-slider.slick-current{}
+
+/*Слик Слайдер News- параметры относятся к конкретному слайдеру новостей на странице*/
+
+.slider-box{
+	position: relative;
+	z-index: 40;
+}
+.slider-box .slick-dots{
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px 68px 0px;
+}
+
+.slider-box .slick-dots button{
+	border: 2px solid #D0D0D0;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #CFCFCF;
+	margin: 0px 2.5px;
+	padding: 10px;
+	background-color: #ffff;
+}
+
+@media(max-width: 1200px){
+	.news-item{
+		padding: 20px 17px 20px 17px;
+	}
+}
+@media(max-width: 930px){
+	.news-item{
+		padding: 20px 10px 20px 10px;
+	}
+}
+@media(max-width: 890px){
+	.news-item{
+		flex: 0 1 50%;
+		padding: 20px 25px 20px 25px;
+	}
+	.news-wrapper__box{
+		flex-direction: column;
+	}
+}
+@media(max-width: 767px){
+	.transitions{
+		margin: 70px 0px 0px 0px;
+	}
+	.news-header{
+		margin: 15px 0px 15px 0px;
+	}
+}
+@media(max-width: 490px){
+	.news-item{
+		padding: 12px 8px 12px 8px;
+	}
+		.slider-box .slick-dots button{
+		padding: 4px;
+	}
+}
